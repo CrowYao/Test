@@ -19,3 +19,9 @@
 - `git diff .\readme.md` ：将工作区中的文件和暂存区中文件进行比较  
 - `git diff 17bcf00 .\readme.md` ：比较暂存区和本地库中内容
 - `git diff HEAD .\readme.md` : 比较暂存区和本地库中内容
+
+<br/>
+
+`git branch 分支名` :创建分支
+`git branch -v` :查看分支
+`git checkout 分支名` :切换分支
