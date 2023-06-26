@@ -8,5 +8,6 @@
 (分页情况 `spacebar` 下一页 `b` 上一页)
 `git reflog`: 查看指针回到历史版本步数
   
-`git reset`:前进或者后退历史版本
+`git reset`  
+- `git reset --hard 索引号`:前进或者后退历史版本 （当前暂存区内容会因为回退消失）
 
