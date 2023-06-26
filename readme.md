@@ -24,4 +24,5 @@
 
 `git branch 分支名` :创建分支
 `git branch -v` :查看分支
-`git checkout 分支名` :切换分支
+`git checkout 分支名` :切换分支  
+`git merge 分支名` :合并分支(处于主分支时使用指令)
