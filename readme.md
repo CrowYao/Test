@@ -35,6 +35,7 @@
 `git remote -v`:远程库信息查看
 `git remote 远程库名 add 远程库地址`: 添加远程库
 `git push 远程库名 分支名`: 推送至远程库
+`git clone 远程库地址`: 远程库内容同步到本地
 ```console
 admin@DESKTOP-8HMQAG5 MINGW64 /d/Download_Browser/mashibing/工具/Git资料和软件/git_test/test1 (master)
 $ git remote add origin https://github.com/CrowYao/Test.git
@@ -43,6 +44,24 @@ admin@DESKTOP-8HMQAG5 MINGW64 /d/Download_Browser/mashibing/工具/Git资料和�
 $ git remote -v
 origin  https://github.com/CrowYao/Test.git (fetch)
 origin  https://github.com/CrowYao/Test.git (push)
+
+$ git push origin master
+```
+
+<br/>
+
+## 拉取至本地
+`git fetch 远程别名 远程分支`: 将远程代码拉至本地暂存区
+`git merge 远程别名/远程分支名`: 将远程指定分支代码合并到本地(确认在本地master分支进行操作)
+`git pull 远程别名/远程分支名`： 将 fetch + merge 一次性做完（存在风险）
+```console
+$ git fetch origin master
+
+$ git merge origin/master
+
+$ git merge origin/master --allow-unrelated-histories (出现unrelated hisory报错可以使用该代码)
+
+
 ```
 
 
